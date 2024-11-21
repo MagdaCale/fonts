@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Diese Anleitung zeigt Schritt für Schritt, wie Schriftarten in einem HTML- und CSS-Projekt eingebunden und verwendet werden können. Die bereitgestellten Fonts befinden sich im Ordner `fonts/assets/fonts` und können mit der CSS-Regel `@font-face` eingebunden werden.
+In dieser Anleitung lernen Teilnehmende im Modul 1 (HTML & CSS), wie sie verschiedene Schriftarten (Fonts) in ihr Projekt einbinden und anwenden können. Die Fonts befinden sich im Ordner fonts/assets/fonts und können mit der CSS-Regel  `@font-face` integriert werden.
 
 ---
 
