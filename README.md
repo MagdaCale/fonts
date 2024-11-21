@@ -1,10 +1,14 @@
-#Einbindung von Schriftarten (Fonts) in HTML & CSS
+# Einbindung von Schriftarten (Fonts) in HTML & CSS
 
-##Beschreibung
+## Übersicht
 
-In dieser Anleitung lernen Teilnehmende im Modul 1 (HTML & CSS), wie sie verschiedene Schriftarten (Fonts) in ihr Projekt einbinden und anwenden können. Die Fonts befinden sich im Ordner fonts/assets/fonts und können mit der CSS-Regel @font-face integriert werden.
+Diese Anleitung zeigt Schritt für Schritt, wie Schriftarten in einem HTML- und CSS-Projekt eingebunden und verwendet werden können. Die bereitgestellten Fonts befinden sich im Ordner `fonts/assets/fonts` und können mit der CSS-Regel `@font-face` eingebunden werden.
 
+---
 
+## Verzeichnisstruktur
+
+```plaintext
 project-folder/
 ├── assets/
 │   └── fonts/
@@ -16,12 +20,16 @@ project-folder/
 │       └── TT Interphases Pro Mono Trial Regular.ttf
 ├── index.html
 └── styles.css
+```
 
 
-Code-Beispiele
+## Schritt 1: Schriftarten einbinden
 
-#1. Schriftarten einbinden mit @font-face
+Um Schriftarten in dein Projekt einzubinden, verwende die CSS-Regel `@font-face`. Dies ermöglicht dir, benutzerdefinierte Schriftarten zu definieren, die du später in deinem HTML und CSS verwenden kannst.
 
+### Beispiel-Code
+
+```css
 @font-face {
     font-family: "mono";
     src: url("../fonts/TT Interphases Pro Mono Trial Regular.ttf");
@@ -31,12 +39,31 @@ Code-Beispiele
     src: url("../fonts/JMH Typewriter-Thin.ttf");
 }
 @font-face {
-    .....
+    font-family: "lemon";
+    src: url("../fonts/LEMONMILK-Regular.otf");
 }
+@font-face {
+    font-family: "oldNewspaper";
+    src: url("../fonts/OldNewspaperTypes.ttf");
+}
+@font-face {
+    font-family: "necto";
+    src: url("../fonts/NectoMono-Regular.otf");
+}
+@font-face {
+    font-family: "jura";
+    src: url("../fonts/Jura-VariableFont_wght.ttf");
+}
+```
 
 
-#2. Schriftarten im HTML verwenden
+## Schritt 2: Schriftarten im CSS verwenden
 
+Nach der Definition der Schriftarten kannst du sie mithilfe der font-family-Eigenschaft verschiedenen HTML-Elementen zuweisen.
+
+### Beispiel-Code
+
+```css
 body {
     text-align: center;
 }
@@ -70,7 +97,7 @@ article:nth-of-type(2) p {
 article:nth-of-type(3) p {
     font-family: "JHM"; 
     font-size: 25px;
-    color:#ffffff;
+    color: #ffffff;
     background-color: #04ebac;
     padding: 20px;
     border-radius: 10px;
@@ -84,8 +111,12 @@ article:nth-of-type(4) p {
 article:nth-of-type(5) p {
     font-family: "jura";
     font-size: 12px;
-    color:#04ebac;
+    color: #04ebac;
     background-color: #5c3cdc;
     padding: 20px;
     border-radius: 10px;
 }
+```
+
+
+
